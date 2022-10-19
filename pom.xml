@@ -14,9 +14,7 @@
     <name>MyBlog</name>
     <description>MyBlog</description>
     <properties>
-<!--        <java.version>17</java.version>-->
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <java.version>17</java.version>
     </properties>
     <dependencies>
         <dependency>
@@ -70,6 +68,10 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <source>17</source>
+                    <target>17</target>
+                </configuration>
             </plugin>
         </plugins>
     </build>
